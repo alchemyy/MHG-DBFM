@@ -13,7 +13,7 @@
 2. Train our own SVM model in python by using our own dataset
 3. Convert the trained model to the format supported by CoreML by using a python package named coremltools
 4. Use the trained model in watch app to predict future hand gesture
-5. Utilized DoubanFM's API to retrieve sound track.
+5. Utilize DoubanFM's API to retrieve sound track.
 
 ### What's finished ###
 
