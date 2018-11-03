@@ -1,0 +1,890 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33202EE020A7D48400752B39 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33202EDF20A7D48300752B39 /* PlayerViewController.swift */; };
+		33202EE320A7D49800752B39 /* sklearnC_50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 33202EE120A7D49700752B39 /* sklearnC_50.mlmodel */; };
+		33202EE420A7D49800752B39 /* sklearn.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 33202EE220A7D49800752B39 /* sklearn.mlmodel */; };
+		33202EE720A7D4A300752B39 /* sklearn.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 33202EE520A7D4A300752B39 /* sklearn.mlmodel */; };
+		33202EE820A7D4A300752B39 /* sklearnC_50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 33202EE620A7D4A300752B39 /* sklearnC_50.mlmodel */; };
+		33202EEA20A7D4B300752B39 /* DouBanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33202EE920A7D4B300752B39 /* DouBanModel.swift */; };
+		3375881F20A7D37C00740B56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375881E20A7D37C00740B56 /* AppDelegate.swift */; };
+		3375882420A7D37C00740B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3375882220A7D37C00740B56 /* Main.storyboard */; };
+		3375882620A7D37D00740B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3375882520A7D37D00740B56 /* Assets.xcassets */; };
+		3375882920A7D37D00740B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3375882720A7D37D00740B56 /* LaunchScreen.storyboard */; };
+		3375883420A7D37D00740B56 /* MHD_DBFMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375883320A7D37D00740B56 /* MHD_DBFMTests.swift */; };
+		3375883F20A7D37D00740B56 /* MHD_DBFMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375883E20A7D37D00740B56 /* MHD_DBFMUITests.swift */; };
+		3375884420A7D37D00740B56 /* MHD-DBFM WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3375884320A7D37D00740B56 /* MHD-DBFM WatchKit App.app */; };
+		3375884A20A7D37D00740B56 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3375884820A7D37D00740B56 /* Interface.storyboard */; };
+		3375884C20A7D37D00740B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3375884B20A7D37D00740B56 /* Assets.xcassets */; };
+		3375885320A7D37E00740B56 /* MHD-DBFM WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3375885220A7D37E00740B56 /* MHD-DBFM WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3375885820A7D37E00740B56 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375885720A7D37E00740B56 /* InterfaceController.swift */; };
+		3375885A20A7D37E00740B56 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375885920A7D37E00740B56 /* ExtensionDelegate.swift */; };
+		3375885C20A7D37E00740B56 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375885B20A7D37E00740B56 /* NotificationController.swift */; };
+		3375885E20A7D37E00740B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3375885D20A7D37E00740B56 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3375883020A7D37D00740B56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3375881320A7D37C00740B56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3375881A20A7D37C00740B56;
+			remoteInfo = "MHD-DBFM";
+		};
+		3375883B20A7D37D00740B56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3375881320A7D37C00740B56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3375881A20A7D37C00740B56;
+			remoteInfo = "MHD-DBFM";
+		};
+		3375884520A7D37D00740B56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3375881320A7D37C00740B56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3375884220A7D37D00740B56;
+			remoteInfo = "MHD-DBFM WatchKit App";
+		};
+		3375885420A7D37E00740B56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3375881320A7D37C00740B56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3375885120A7D37E00740B56;
+			remoteInfo = "MHD-DBFM WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3375886620A7D37E00740B56 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3375885320A7D37E00740B56 /* MHD-DBFM WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3375886A20A7D37E00740B56 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3375884420A7D37D00740B56 /* MHD-DBFM WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		33202EDF20A7D48300752B39 /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		33202EE120A7D49700752B39 /* sklearnC_50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = sklearnC_50.mlmodel; sourceTree = "<group>"; };
+		33202EE220A7D49800752B39 /* sklearn.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = sklearn.mlmodel; sourceTree = "<group>"; };
+		33202EE520A7D4A300752B39 /* sklearn.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = sklearn.mlmodel; sourceTree = "<group>"; };
+		33202EE620A7D4A300752B39 /* sklearnC_50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = sklearnC_50.mlmodel; sourceTree = "<group>"; };
+		33202EE920A7D4B300752B39 /* DouBanModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DouBanModel.swift; sourceTree = "<group>"; };
+		3375881B20A7D37C00740B56 /* MHD-DBFM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MHD-DBFM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3375881E20A7D37C00740B56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3375882320A7D37C00740B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3375882520A7D37D00740B56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3375882820A7D37D00740B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3375882A20A7D37D00740B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3375882F20A7D37D00740B56 /* MHD-DBFMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MHD-DBFMTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3375883320A7D37D00740B56 /* MHD_DBFMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHD_DBFMTests.swift; sourceTree = "<group>"; };
+		3375883520A7D37D00740B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3375883A20A7D37D00740B56 /* MHD-DBFMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MHD-DBFMUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3375883E20A7D37D00740B56 /* MHD_DBFMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHD_DBFMUITests.swift; sourceTree = "<group>"; };
+		3375884020A7D37D00740B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3375884320A7D37D00740B56 /* MHD-DBFM WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MHD-DBFM WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3375884920A7D37D00740B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3375884B20A7D37D00740B56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3375884D20A7D37D00740B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3375885220A7D37E00740B56 /* MHD-DBFM WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MHD-DBFM WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3375885720A7D37E00740B56 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		3375885920A7D37E00740B56 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		3375885B20A7D37E00740B56 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		3375885D20A7D37E00740B56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3375885F20A7D37E00740B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3375886020A7D37E00740B56 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3375881820A7D37C00740B56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3375882C20A7D37D00740B56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3375883720A7D37D00740B56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3375884F20A7D37E00740B56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3375881220A7D37C00740B56 = {
+			isa = PBXGroup;
+			children = (
+				3375881D20A7D37C00740B56 /* MHD-DBFM */,
+				3375883220A7D37D00740B56 /* MHD-DBFMTests */,
+				3375883D20A7D37D00740B56 /* MHD-DBFMUITests */,
+				3375884720A7D37D00740B56 /* MHD-DBFM WatchKit App */,
+				3375885620A7D37E00740B56 /* MHD-DBFM WatchKit Extension */,
+				3375881C20A7D37C00740B56 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3375881C20A7D37C00740B56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3375881B20A7D37C00740B56 /* MHD-DBFM.app */,
+				3375882F20A7D37D00740B56 /* MHD-DBFMTests.xctest */,
+				3375883A20A7D37D00740B56 /* MHD-DBFMUITests.xctest */,
+				3375884320A7D37D00740B56 /* MHD-DBFM WatchKit App.app */,
+				3375885220A7D37E00740B56 /* MHD-DBFM WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3375881D20A7D37C00740B56 /* MHD-DBFM */ = {
+			isa = PBXGroup;
+			children = (
+				33202EE920A7D4B300752B39 /* DouBanModel.swift */,
+				33202EE220A7D49800752B39 /* sklearn.mlmodel */,
+				33202EE120A7D49700752B39 /* sklearnC_50.mlmodel */,
+				33202EDF20A7D48300752B39 /* PlayerViewController.swift */,
+				3375881E20A7D37C00740B56 /* AppDelegate.swift */,
+				3375882220A7D37C00740B56 /* Main.storyboard */,
+				3375882520A7D37D00740B56 /* Assets.xcassets */,
+				3375882720A7D37D00740B56 /* LaunchScreen.storyboard */,
+				3375882A20A7D37D00740B56 /* Info.plist */,
+			);
+			path = "MHD-DBFM";
+			sourceTree = "<group>";
+		};
+		3375883220A7D37D00740B56 /* MHD-DBFMTests */ = {
+			isa = PBXGroup;
+			children = (
+				3375883320A7D37D00740B56 /* MHD_DBFMTests.swift */,
+				3375883520A7D37D00740B56 /* Info.plist */,
+			);
+			path = "MHD-DBFMTests";
+			sourceTree = "<group>";
+		};
+		3375883D20A7D37D00740B56 /* MHD-DBFMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3375883E20A7D37D00740B56 /* MHD_DBFMUITests.swift */,
+				3375884020A7D37D00740B56 /* Info.plist */,
+			);
+			path = "MHD-DBFMUITests";
+			sourceTree = "<group>";
+		};
+		3375884720A7D37D00740B56 /* MHD-DBFM WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				3375884820A7D37D00740B56 /* Interface.storyboard */,
+				3375884B20A7D37D00740B56 /* Assets.xcassets */,
+				3375884D20A7D37D00740B56 /* Info.plist */,
+			);
+			path = "MHD-DBFM WatchKit App";
+			sourceTree = "<group>";
+		};
+		3375885620A7D37E00740B56 /* MHD-DBFM WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				33202EE520A7D4A300752B39 /* sklearn.mlmodel */,
+				33202EE620A7D4A300752B39 /* sklearnC_50.mlmodel */,
+				3375885720A7D37E00740B56 /* InterfaceController.swift */,
+				3375885920A7D37E00740B56 /* ExtensionDelegate.swift */,
+				3375885B20A7D37E00740B56 /* NotificationController.swift */,
+				3375885D20A7D37E00740B56 /* Assets.xcassets */,
+				3375885F20A7D37E00740B56 /* Info.plist */,
+				3375886020A7D37E00740B56 /* PushNotificationPayload.apns */,
+			);
+			path = "MHD-DBFM WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3375881A20A7D37C00740B56 /* MHD-DBFM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3375886B20A7D37E00740B56 /* Build configuration list for PBXNativeTarget "MHD-DBFM" */;
+			buildPhases = (
+				3375881720A7D37C00740B56 /* Sources */,
+				3375881820A7D37C00740B56 /* Frameworks */,
+				3375881920A7D37C00740B56 /* Resources */,
+				3375886A20A7D37E00740B56 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3375884620A7D37D00740B56 /* PBXTargetDependency */,
+			);
+			name = "MHD-DBFM";
+			productName = "MHD-DBFM";
+			productReference = 3375881B20A7D37C00740B56 /* MHD-DBFM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3375882E20A7D37D00740B56 /* MHD-DBFMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3375886E20A7D37E00740B56 /* Build configuration list for PBXNativeTarget "MHD-DBFMTests" */;
+			buildPhases = (
+				3375882B20A7D37D00740B56 /* Sources */,
+				3375882C20A7D37D00740B56 /* Frameworks */,
+				3375882D20A7D37D00740B56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3375883120A7D37D00740B56 /* PBXTargetDependency */,
+			);
+			name = "MHD-DBFMTests";
+			productName = "MHD-DBFMTests";
+			productReference = 3375882F20A7D37D00740B56 /* MHD-DBFMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3375883920A7D37D00740B56 /* MHD-DBFMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3375887120A7D37E00740B56 /* Build configuration list for PBXNativeTarget "MHD-DBFMUITests" */;
+			buildPhases = (
+				3375883620A7D37D00740B56 /* Sources */,
+				3375883720A7D37D00740B56 /* Frameworks */,
+				3375883820A7D37D00740B56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3375883C20A7D37D00740B56 /* PBXTargetDependency */,
+			);
+			name = "MHD-DBFMUITests";
+			productName = "MHD-DBFMUITests";
+			productReference = 3375883A20A7D37D00740B56 /* MHD-DBFMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3375884220A7D37D00740B56 /* MHD-DBFM WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3375886720A7D37E00740B56 /* Build configuration list for PBXNativeTarget "MHD-DBFM WatchKit App" */;
+			buildPhases = (
+				3375884120A7D37D00740B56 /* Resources */,
+				3375886620A7D37E00740B56 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3375885520A7D37E00740B56 /* PBXTargetDependency */,
+			);
+			name = "MHD-DBFM WatchKit App";
+			productName = "MHD-DBFM WatchKit App";
+			productReference = 3375884320A7D37D00740B56 /* MHD-DBFM WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		3375885120A7D37E00740B56 /* MHD-DBFM WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3375886320A7D37E00740B56 /* Build configuration list for PBXNativeTarget "MHD-DBFM WatchKit Extension" */;
+			buildPhases = (
+				3375884E20A7D37E00740B56 /* Sources */,
+				3375884F20A7D37E00740B56 /* Frameworks */,
+				3375885020A7D37E00740B56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MHD-DBFM WatchKit Extension";
+			productName = "MHD-DBFM WatchKit Extension";
+			productReference = 3375885220A7D37E00740B56 /* MHD-DBFM WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3375881320A7D37C00740B56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = alchemistyang;
+				TargetAttributes = {
+					3375881A20A7D37C00740B56 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					3375882E20A7D37D00740B56 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 3375881A20A7D37C00740B56;
+					};
+					3375883920A7D37D00740B56 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 3375881A20A7D37C00740B56;
+					};
+					3375884220A7D37D00740B56 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					3375885120A7D37E00740B56 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 3375881620A7D37C00740B56 /* Build configuration list for PBXProject "MHD-DBFM" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3375881220A7D37C00740B56;
+			productRefGroup = 3375881C20A7D37C00740B56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3375881A20A7D37C00740B56 /* MHD-DBFM */,
+				3375882E20A7D37D00740B56 /* MHD-DBFMTests */,
+				3375883920A7D37D00740B56 /* MHD-DBFMUITests */,
+				3375884220A7D37D00740B56 /* MHD-DBFM WatchKit App */,
+				3375885120A7D37E00740B56 /* MHD-DBFM WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3375881920A7D37C00740B56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3375882920A7D37D00740B56 /* LaunchScreen.storyboard in Resources */,
+				3375882620A7D37D00740B56 /* Assets.xcassets in Resources */,
+				3375882420A7D37C00740B56 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3375882D20A7D37D00740B56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3375883820A7D37D00740B56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3375884120A7D37D00740B56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3375884C20A7D37D00740B56 /* Assets.xcassets in Resources */,
+				3375884A20A7D37D00740B56 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3375885020A7D37E00740B56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3375885E20A7D37E00740B56 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3375881720A7D37C00740B56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33202EE320A7D49800752B39 /* sklearnC_50.mlmodel in Sources */,
+				3375881F20A7D37C00740B56 /* AppDelegate.swift in Sources */,
+				33202EE020A7D48400752B39 /* PlayerViewController.swift in Sources */,
+				33202EEA20A7D4B300752B39 /* DouBanModel.swift in Sources */,
+				33202EE420A7D49800752B39 /* sklearn.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3375882B20A7D37D00740B56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3375883420A7D37D00740B56 /* MHD_DBFMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3375883620A7D37D00740B56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3375883F20A7D37D00740B56 /* MHD_DBFMUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3375884E20A7D37E00740B56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3375885C20A7D37E00740B56 /* NotificationController.swift in Sources */,
+				3375885A20A7D37E00740B56 /* ExtensionDelegate.swift in Sources */,
+				3375885820A7D37E00740B56 /* InterfaceController.swift in Sources */,
+				33202EE720A7D4A300752B39 /* sklearn.mlmodel in Sources */,
+				33202EE820A7D4A300752B39 /* sklearnC_50.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3375883120A7D37D00740B56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3375881A20A7D37C00740B56 /* MHD-DBFM */;
+			targetProxy = 3375883020A7D37D00740B56 /* PBXContainerItemProxy */;
+		};
+		3375883C20A7D37D00740B56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3375881A20A7D37C00740B56 /* MHD-DBFM */;
+			targetProxy = 3375883B20A7D37D00740B56 /* PBXContainerItemProxy */;
+		};
+		3375884620A7D37D00740B56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3375884220A7D37D00740B56 /* MHD-DBFM WatchKit App */;
+			targetProxy = 3375884520A7D37D00740B56 /* PBXContainerItemProxy */;
+		};
+		3375885520A7D37E00740B56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3375885120A7D37E00740B56 /* MHD-DBFM WatchKit Extension */;
+			targetProxy = 3375885420A7D37E00740B56 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3375882220A7D37C00740B56 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3375882320A7D37C00740B56 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3375882720A7D37D00740B56 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3375882820A7D37D00740B56 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3375884820A7D37D00740B56 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3375884920A7D37D00740B56 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3375886120A7D37E00740B56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3375886220A7D37E00740B56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3375886420A7D37E00740B56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KCPDUS6369;
+				INFOPLIST_FILE = "MHD-DBFM WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alchemistyang.MHD-DBFM.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		3375886520A7D37E00740B56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KCPDUS6369;
+				INFOPLIST_FILE = "MHD-DBFM WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alchemistyang.MHD-DBFM.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		3375886820A7D37E00740B56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KCPDUS6369;
+				IBSC_MODULE = MHD_DBFM_WatchKit_Extension;
+				INFOPLIST_FILE = "MHD-DBFM WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alchemistyang.MHD-DBFM.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		3375886920A7D37E00740B56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KCPDUS6369;
+				IBSC_MODULE = MHD_DBFM_WatchKit_Extension;
+				INFOPLIST_FILE = "MHD-DBFM WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alchemistyang.MHD-DBFM.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		3375886C20A7D37E00740B56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KCPDUS6369;
+				INFOPLIST_FILE = "MHD-DBFM/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alchemistyang.MHD-DBFM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3375886D20A7D37E00740B56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KCPDUS6369;
+				INFOPLIST_FILE = "MHD-DBFM/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alchemistyang.MHD-DBFM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3375886F20A7D37E00740B56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KCPDUS6369;
+				INFOPLIST_FILE = "MHD-DBFMTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alchemistyang.MHD-DBFMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MHD-DBFM.app/MHD-DBFM";
+			};
+			name = Debug;
+		};
+		3375887020A7D37E00740B56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KCPDUS6369;
+				INFOPLIST_FILE = "MHD-DBFMTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alchemistyang.MHD-DBFMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MHD-DBFM.app/MHD-DBFM";
+			};
+			name = Release;
+		};
+		3375887220A7D37E00740B56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KCPDUS6369;
+				INFOPLIST_FILE = "MHD-DBFMUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alchemistyang.MHD-DBFMUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MHD-DBFM";
+			};
+			name = Debug;
+		};
+		3375887320A7D37E00740B56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KCPDUS6369;
+				INFOPLIST_FILE = "MHD-DBFMUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alchemistyang.MHD-DBFMUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MHD-DBFM";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3375881620A7D37C00740B56 /* Build configuration list for PBXProject "MHD-DBFM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3375886120A7D37E00740B56 /* Debug */,
+				3375886220A7D37E00740B56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3375886320A7D37E00740B56 /* Build configuration list for PBXNativeTarget "MHD-DBFM WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3375886420A7D37E00740B56 /* Debug */,
+				3375886520A7D37E00740B56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3375886720A7D37E00740B56 /* Build configuration list for PBXNativeTarget "MHD-DBFM WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3375886820A7D37E00740B56 /* Debug */,
+				3375886920A7D37E00740B56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3375886B20A7D37E00740B56 /* Build configuration list for PBXNativeTarget "MHD-DBFM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3375886C20A7D37E00740B56 /* Debug */,
+				3375886D20A7D37E00740B56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3375886E20A7D37E00740B56 /* Build configuration list for PBXNativeTarget "MHD-DBFMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3375886F20A7D37E00740B56 /* Debug */,
+				3375887020A7D37E00740B56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3375887120A7D37E00740B56 /* Build configuration list for PBXNativeTarget "MHD-DBFMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3375887220A7D37E00740B56 /* Debug */,
+				3375887320A7D37E00740B56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3375881320A7D37C00740B56 /* Project object */;
+}

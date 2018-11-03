@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13529" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13507"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MagicalHandGesture_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="136" alignment="left" text="Hello, Master" textAlignment="center" id="hVu-xo-nkw"/>
+                        <button width="1" alignment="left" title="Start Recording" id="nwz-Qk-aBu">
+                            <connections>
+                                <action selector="start" destination="AgC-eL-Hgc" id="App-ri-APF"/>
+                            </connections>
+                        </button>
+                        <label width="136" alignment="left" alpha="0.90000000000000002" id="Vin-LR-Eky">
+                            <color key="textColor" red="0.31788684719999999" green="0.86423167899999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <group width="1" alignment="left" id="mjW-bT-o9U">
+                            <items>
+                                <label width="90" alignment="left" text="InMessage:" id="BHH-g4-6YR"/>
+                                <label width="68" alignment="left" alpha="0.90000000000000002" text="Label" id="Mz2-Jk-Nx0">
+                                    <color key="textColor" red="0.31788684719999999" green="0.86423167899999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Predict" id="H8O-sB-C7Q">
+                            <connections>
+                                <action selector="predict_start" destination="AgC-eL-Hgc" id="nQZ-nc-M3Z"/>
+                            </connections>
+                        </button>
+                        <group width="1" alignment="left" id="WoJ-ru-Wm7">
+                            <items>
+                                <label alignment="left" text="Prediction:" id="2KE-B3-npZ"/>
+                                <label width="68" alignment="left" alpha="0.90000000000000002" text="pred_result" id="Wb2-L6-c4H">
+                                    <color key="textColor" red="0.31788684719999999" green="0.86423167899999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="ZhH-Yl-sMZ">
+                            <items>
+                                <label width="70" alignment="left" text="accX: " id="7hp-Z4-QyF"/>
+                                <label width="79" alignment="left" alpha="0.90000000000000002" text="Accx" textAlignment="left" id="IWI-lb-JNQ">
+                                    <color key="textColor" red="0.3178868472372065" green="0.86423167904808795" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="136" alignment="left" id="heY-YX-boW">
+                            <items>
+                                <label width="70" alignment="left" text="accY:" id="wyp-Ix-Z9F"/>
+                                <label width="88" alignment="left" alpha="0.90000000000000002" text="Accy" textAlignment="left" id="DEM-K9-v0j">
+                                    <color key="textColor" red="0.31788684719999999" green="0.86423167899999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="uip-TY-ESo">
+                            <items>
+                                <label width="72" alignment="left" text="accZ:" id="yBF-mf-EMZ"/>
+                                <label width="1" alignment="left" alpha="0.90000000000000002" text="Accz" textAlignment="left" id="RTH-oO-7We">
+                                    <color key="textColor" red="0.31788684719999999" green="0.86423167899999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="6HW-CH-lmb">
+                            <items>
+                                <label width="74" alignment="left" text="rotX:" id="8Hc-1t-S1L"/>
+                                <label width="66" alignment="left" alpha="0.90000000000000002" text="rotx" textAlignment="left" id="7Tg-L1-JMy">
+                                    <color key="textColor" red="0.31788684719999999" green="0.86423167899999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="Y7h-mO-xhy">
+                            <items>
+                                <label width="71" alignment="left" text="rotY:" id="Kbx-Tk-jEJ"/>
+                                <label width="73" alignment="left" alpha="0.90000000000000002" text="roty" textAlignment="left" id="LOS-4i-PRh">
+                                    <color key="textColor" red="0.31788684719999999" green="0.86423167899999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="bDc-Rq-IhG">
+                            <items>
+                                <label width="71" alignment="left" text="rotZ:" id="3HH-f9-3aJ"/>
+                                <label width="68" alignment="left" alpha="0.90000000000000002" text="rotz" textAlignment="left" id="z5I-Y5-WYh">
+                                    <color key="textColor" red="0.31788684719999999" green="0.86423167899999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="HgT-jC-Hcm">
+                            <items>
+                                <label width="81" alignment="left" text="maxAccX: " id="lDU-6A-53Q"/>
+                                <label width="71" alignment="left" alpha="0.90000000000000002" text="maxaccx" textAlignment="left" id="Pi3-F1-4MX">
+                                    <color key="textColor" red="0.31788684719999999" green="0.86423167899999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="dqw-4j-41M">
+                            <items>
+                                <label width="83" alignment="left" text="maxAccY: " id="F44-7l-m53"/>
+                                <label width="71" alignment="left" alpha="0.90000000000000002" text="maxaccY" textAlignment="left" id="y8C-ch-isA">
+                                    <color key="textColor" red="0.31788684719999999" green="0.86423167899999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="eJ5-3h-RrA">
+                            <items>
+                                <label width="83" alignment="left" text="maxAccZ: " id="HJU-nk-WrP"/>
+                                <label width="71" alignment="left" alpha="0.90000000000000002" text="maxaccZ" textAlignment="left" id="evI-UR-5Bn">
+                                    <color key="textColor" red="0.31788684719999999" green="0.86423167899999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="dbA-r8-kM8">
+                            <items>
+                                <label width="81" alignment="left" text="maxRotX: " id="m8Y-qT-cf1"/>
+                                <label width="71" alignment="left" alpha="0.90000000000000002" text="maxRotx" textAlignment="left" id="dSL-Ag-wJ2">
+                                    <color key="textColor" red="0.31788684719999999" green="0.86423167899999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="0ye-vl-tQE">
+                            <items>
+                                <label width="83" alignment="left" text="maxRotY: " id="qmw-os-EW8"/>
+                                <label width="71" alignment="left" alpha="0.90000000000000002" text="maxRotY" textAlignment="left" id="aQ3-hV-o6e">
+                                    <color key="textColor" red="0.31788684719999999" green="0.86423167899999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="UFs-CN-rsh">
+                            <items>
+                                <label width="83" alignment="left" text="maxRotZ: " id="amQ-DL-7u5"/>
+                                <label width="71" alignment="left" alpha="0.90000000000000002" text="maxRotZ" textAlignment="left" id="kBw-9j-koi">
+                                    <color key="textColor" red="0.31788684719999999" green="0.86423167899999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Send Data File" id="wvw-Zq-NPP">
+                            <connections>
+                                <action selector="sendFile" destination="AgC-eL-Hgc" id="gWy-iq-lfj"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Create New File" id="IVx-es-bSY">
+                            <connections>
+                                <action selector="createFile" destination="AgC-eL-Hgc" id="tW6-wS-VKh"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="DeleteDataFile" id="s2O-yw-sMr">
+                            <connections>
+                                <action selector="deleteDataFile" destination="AgC-eL-Hgc" id="L6m-3H-R3y"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Send Message" id="vlW-Wb-5iZ">
+                            <connections>
+                                <action selector="sendToParent" destination="AgC-eL-Hgc" id="cSY-1g-Mxj"/>
+                            </connections>
+                        </button>
+                        <group width="1" alignment="left" id="CUW-q8-GjL">
+                            <items>
+                                <label width="136" alignment="left" text="InMessage" textAlignment="center" id="7C6-b5-R9x"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="accX" destination="IWI-lb-JNQ" id="Ccz-3K-v8q"/>
+                        <outlet property="accY" destination="DEM-K9-v0j" id="u6J-fd-Ixd"/>
+                        <outlet property="accZ" destination="RTH-oO-7We" id="Fxf-Vc-OlU"/>
+                        <outlet property="inMessageText" destination="Mz2-Jk-Nx0" id="vj3-bC-4Bx"/>
+                        <outlet property="maxAccX" destination="Pi3-F1-4MX" id="Sbd-Eh-6DF"/>
+                        <outlet property="maxAccY" destination="y8C-ch-isA" id="a0T-6g-miv"/>
+                        <outlet property="maxAccZ" destination="evI-UR-5Bn" id="xYR-wP-KG9"/>
+                        <outlet property="maxRotX" destination="dSL-Ag-wJ2" id="wfc-57-2ix"/>
+                        <outlet property="maxRotY" destination="aQ3-hV-o6e" id="swI-z2-o2B"/>
+                        <outlet property="maxRotZ" destination="kBw-9j-koi" id="xBT-Bw-3aO"/>
+                        <outlet property="messageLabel" destination="7C6-b5-R9x" id="Wnx-pt-TLP"/>
+                        <outlet property="predict_result_label" destination="Wb2-L6-c4H" id="WzN-1L-vSa"/>
+                        <outlet property="rotX" destination="7Tg-L1-JMy" id="VuL-fe-fsW"/>
+                        <outlet property="rotY" destination="LOS-4i-PRh" id="YSV-gI-nc6"/>
+                        <outlet property="rotZ" destination="z5I-Y5-WYh" id="fv3-pJ-nqF"/>
+                        <outlet property="sendButton" destination="vlW-Wb-5iZ" id="o9f-ik-0Sz"/>
+                        <outlet property="sendFileButton" destination="wvw-Zq-NPP" id="IlL-gh-FBK"/>
+                        <outlet property="statusLabel" destination="hVu-xo-nkw" id="1KJ-NL-iPd"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="219.69230769230771" y="342.17948717948718"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Hello there." id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="MagicalHandGesture_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>
