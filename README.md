@@ -26,13 +26,18 @@
 
 1. Currently the hand gesture's recognition needs to be triggered by touching the 'predict' button on apple watch, need a better way to trigger the recognition of gesture.
 
-* Requirements
+* Packages
 	* scikit-learn on github
 		* Python (>= 2.7 or >= 3.3)
 		* NumPy (>= 1.8.2)
 		* SciPy (>= 0.13.3)
 	* coremltools
 		* Python (2.7)
+	* AVPlayer
+* Platform
+	* macOS + Xcode + Pycharm
+* Language
+	* Swift 4.0 + python 2.7
     
 ### Team Members ###
 
