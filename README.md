@@ -36,8 +36,9 @@
 	* coremltools
 		* Python (2.7)
 	* AVPlayer
-* Platform
+* Platform & Devices
 	* macOS + Xcode + Pycharm
+	* IPhone8 Plus & Apple watch Series 3
 * Language
 	* Swift 4.0 + python 2.7
     
