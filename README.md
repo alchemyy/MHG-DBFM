@@ -10,7 +10,7 @@
 
 1. Collect data meets requirement for training.
     1. Test how many iterations should be executed according to the average time to complete a gesture,so that we can get same number of ouput data each time,that means each set of data to represent a gesture has same dimensions,which is required to train the SVM model later in python.
-2. Train our own SVM model in python by using our own dataset
+2. Train SVM model in python by using own dataset
 3. Convert the trained model to the format supported by CoreML by using a python package named coremltools
 4. Use the trained model in watch app to predict future hand gesture
 5. Utilize DoubanFM's API to retrieve sound track.
