@@ -191,7 +191,7 @@ class PlayerViewController: UIViewController,doubanModelProtocol, WCSessionDeleg
         let userCredential = URLCredential(user: "user",
                                            password: "password",
                                            persistence: .permanent)
-
+        
         URLCredentialStorage.shared.setDefaultCredential(userCredential, for: protectionSpace)
         self.avPlayer?.volume = 1.0
         let asset = AVAsset(url: videoURL)

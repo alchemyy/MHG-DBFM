@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  audioStreamDemo
+//  MHD_DBFM
 //
-//  Created by iOSDev1 on 20/04/17.
-//  Copyright © 2017 Harshal Jadhav. All rights reserved.
+//  Created by alchemist on 5/9/2018.
+//  Copyright © 2018 alchemist_yang. All rights reserved.
 //
 
 import UIKit

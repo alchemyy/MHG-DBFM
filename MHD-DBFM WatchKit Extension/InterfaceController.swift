@@ -22,6 +22,8 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate{
     }
     
     //created for communication with iphone
+    @IBOutlet var resetButton:
+        WKInterfaceLabel!
     @IBOutlet var messageLabel: WKInterfaceLabel!
     @IBOutlet var sendButton: WKInterfaceButton!
     @IBOutlet var sendFileButton: WKInterfaceButton!
@@ -58,12 +60,33 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate{
     var counter = 0
     var predict_counter = 0
     var timer = Timer()
+    var punch_timer = Timer()
+    var handler_timer = Timer()
     var predict_timer = Timer()
+    @objc var predict_finished = 0
     let queue = OperationQueue()
     let manager = FileManager.default
     var session : WCSession!
     var seconds = 2
     let dimensionOfData = 180 / 6 //indicate how many elements in a line in csv file
+    
+    var observable_flag : Int = 0 {//indicate if a punch & ges are both predicted
+        willSet {
+            //newValue
+            if(observable_flag == 1){
+                // should correctly update this flag in the main thread, cause assignment here would be override by the assginment in main thread
+            }
+        }
+        didSet {
+            //oldValue
+            //if a prediction is finished, reactivate the punch_detection and repeat this process so that to keep recognizing hand gestures
+            if(observable_flag == 1){
+                //wait for previous process to be completed
+                sleep(1)
+                punch_detection_activate()
+            }
+        }
+    }
     
     private let healthStore = HKHealthStore()
     private var workoutSession: HKWorkoutSession?
@@ -79,7 +102,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate{
         queue.name = "MotionManagerQueue"
         //UIApplication.shared.isIdleTimerDisabled = true
 
-        self.resetMaxValues()
+        self.reset()
         let fileName = "ges.csv"
         let filePath:String = NSHomeDirectory() + "/Documents/" + fileName
         createFile(name:fileName)
@@ -119,11 +142,38 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate{
         
         sendFileButton.setTitle("File Not Ready")
         
-        startWorkout()
+        punch_detection_activate()
         
+        // startWorkout()
         //let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("ges.csv")
         
         //self.startUpdates(filePath)
+    }
+    
+    func punch_detection_activate(){
+        //reset()
+        observable_flag = 0
+        motionManager.deviceMotionUpdateInterval = 1.0 / 60.0
+        motionManager.startDeviceMotionUpdates()
+        punch_timer = Timer.scheduledTimer(timeInterval: 1.0/60, target: self, selector: #selector(InterfaceController.is_punch), userInfo: nil, repeats: true)
+    }
+        
+    @objc func is_punch(){
+        if let deviceMotion = motionManager.deviceMotion{
+            self.accX.setText(String(format: "%.2fg", deviceMotion.gravity.x))
+            self.accY.setText(String(format: "%.2fg", deviceMotion.gravity.y))
+            self.accZ.setText(String(format: "%.2fg", deviceMotion.gravity.z))
+            self.rotX.setText(String(format: "%.2fg", deviceMotion.rotationRate.x))
+            self.rotY.setText(String(format: "%.2fg", deviceMotion.rotationRate.y))
+            self.rotZ.setText(String(format: "%.2fg", deviceMotion.rotationRate.z))
+            if(deviceMotion.rotationRate.z > 4){
+                punch_timer.invalidate()
+                motionManager.stopDeviceMotionUpdates()
+                predict_start()
+                // set the falg to 1 to trigger observer handler to restart punch_detection.
+                observable_flag = 1
+            }
+        }
     }
     
     private func startWorkout() {
@@ -179,17 +229,6 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate{
     }
 
     
-    @IBAction func resetMaxValues() {
-        currentMaxAccelX = 0
-        currentMaxAccelY = 0
-        currentMaxAccelZ = 0
-        
-        currentMaxRotX = 0
-        currentMaxRotY = 0
-        currentMaxRotZ = 0
-        
-    }
-    
     // *******************************  Training Part  ****************************** //
     @IBAction func start(){
         sendFileButton.setTitle("File Not Ready") //Start recording,File not ready
@@ -199,10 +238,10 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate{
         //      motionManager.startAccelerometerUpdates()
         //      motionManager.startGyroUpdates()
         motionManager.startDeviceMotionUpdates()
-        timer = Timer.scheduledTimer(timeInterval: 1.0/60, target: self, selector: #selector(InterfaceController.update), userInfo: nil, repeats: true) //timer to trigger update() every 1/60 sec
+        timer = Timer.scheduledTimer(timeInterval: 1.0/60, target: self, selector: #selector(InterfaceController.update_csv), userInfo: nil, repeats: true) //timer to trigger update() every 1/60 sec
     }
     
-    @objc func update() { //write data to csv file
+    @objc func update_csv() { //write data to csv file
         let fileName = "ges.csv"
         let filePath:String = NSHomeDirectory() + "/Documents/" + fileName
         counter += 1
@@ -331,7 +370,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate{
     }
     
     func predict(){
-        let model = sklearn()    //Create model object
+        let model = sklearn()   //Create model object
         let data = gesToRecognize //Gesture data ( Double array--size is 180 )
         //Format(Shape) Double array to MLMultiArray
         guard let mlMultiArray = try? MLMultiArray(shape:[180,1], dataType:MLMultiArrayDataType.double) else {
@@ -363,7 +402,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate{
  
     }
     func outputGestureData(_ deviceMotion: CMDeviceMotion,_ filePath:String){//_ fileURL: URL){ //,
-        
+        reset()
         let gravity = deviceMotion.gravity
         let rotationRate = deviceMotion.rotationRate
         //sendMessage(["Message" : "accX: " + String(format: "%.2fg", gravity.x)])
@@ -432,11 +471,25 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate{
         maxRotX.setText(String(format: "%.2fr/s", currentMaxRotX))
         maxRotY.setText(String(format: "%.2fr/s", currentMaxRotY))
         maxRotZ.setText(String(format: "%.2fr/s", currentMaxRotZ))
-        
-        
     }
-
+    @IBAction func reset() {
+        currentMaxAccelX = 0.0
+        currentMaxAccelY = 0.0
+        currentMaxAccelZ = 0.0
+        currentMaxRotX = 0.0
+        currentMaxRotY = 0.0
+        currentMaxRotZ = 0.0
+        maxAccX.setText(String("0"))
+        maxAccY.setText(String("0"))
+        maxAccZ.setText(String("0"))
+        maxRotX.setText(String("0"))
+        maxRotY.setText(String("0"))
+        maxRotZ.setText(String("0"))
+    }
 }
+
+
+
 
 //Workout session
 extension InterfaceController: HKWorkoutSessionDelegate {

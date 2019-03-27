@@ -1,5 +1,8 @@
 # README #
 
+### Ver 1.1 Update Log ###
+
+1. Prediction is now triggered by punching instead of clicking a button, while the punch should be at least 4 rad/s²(rotation rate) on Z-axis. That means no screen-touch behaviour is needed to control the music playback! 
 
 ### What is this repository for? ###
 
