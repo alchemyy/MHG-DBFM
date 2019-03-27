@@ -166,7 +166,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate{
             self.rotX.setText(String(format: "%.2fg", deviceMotion.rotationRate.x))
             self.rotY.setText(String(format: "%.2fg", deviceMotion.rotationRate.y))
             self.rotZ.setText(String(format: "%.2fg", deviceMotion.rotationRate.z))
-            if(deviceMotion.rotationRate.z > 4){
+            if(abs(deviceMotion.rotationRate.z) > 4){
                 punch_timer.invalidate()
                 motionManager.stopDeviceMotionUpdates()
                 predict_start()
