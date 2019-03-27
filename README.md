@@ -25,7 +25,7 @@
 3. Music's playing functions well on IPhone8 plus.
 
 
-### Requirements ###
+### Dependencies ###
 
 * Packages
 	* scikit-learn on github
