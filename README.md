@@ -1,8 +1,13 @@
 # README #
 
-### Ver 1.1 Update Log ###
+## Ver 1.1 Update Log ##
 
 1. Prediction is now triggered by punching instead of clicking a button, while the punch should be at least 4 rad/s²(rotation rate) on Z-axis. That means no screen-touch behaviour is needed to control the music playback! 
+
+## To-do list ##
+- [ ] Application background executing
+
+## Ver 1.0 ##
 
 ### What is this repository for? ###
 
@@ -25,11 +30,7 @@
 3. Music's playing functions well on IPhone8 plus.
 
 
-### What's NOT finished ###
-
-1. Currently the hand gesture's recognition needs to be triggered by touching the 'predict' button on apple watch, need a better way to trigger the recognition of gesture.
-
-### Requirements ###
+### Dependencies ###
 
 * Packages
 	* scikit-learn on github
