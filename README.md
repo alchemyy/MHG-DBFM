@@ -1,4 +1,5 @@
-# README #
+# MHG-DBFM #
+[![License](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 
 ## Ver 1.1 Update Log ##
 
